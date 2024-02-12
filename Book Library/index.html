@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Navbar">
+        <ul class="Navbar-items">
+           <a href="/"><li>Home</li></a> 
+            <a href="about.html"><li>About</li></a> 
+            <li>This Serves no purpose</li>
+        </ul>
+    </div>
+
+    <div class="main">
+       
+        <div class="form-book" >
+            <!-- somehow created a form and its display is none at initial -->
+            <form class="myForm1" id="myForm" action="">
+                <label>Add a new book to the Library</label>
+             <input id="title-name" type="text" placeholder="Book's title " required>
+             <input id="author-name" type="text" placeholder="author">
+             <input id="page-number" type="number" placeholder="number of pages" required min="0">
+             <label for="">Tick the box for Read status and leave for unread status</label>
+             <input  id="status-read" type="checkbox" placeholder="Has read?">
+             <input id="submit-form" type="submit">
+             <!-- button inside form must be declared into type button to avoid it acting as submit type. -->
+            <button type="button" id="close-form">Close the form</button>
+            </form>
+
+        </div>
+        <div class="bookDisplay">
+            <div class="bookLists" id="bookContainer">
+<!-- this is empty at the beginning a place to render the book contents    -->
+        </div>
+
+        </div>
+
+    </div>
+    <div class="signleButton">
+        <button id="showFromBtn" >New Book</button>
+    </div>
+
+    <div class="Footer">
+       
+        <ul class="footer-items">
+            <label for="">For feedback and suggestions plus advices</label>
+            <li>Connect now</li>
+            <a href="https://www.instagram.com/gharti_bikram1/"><li>Instagram</li></a>
+           <a href="https://github.com/BikramGhart1"><li>GitHub</li></a> 
+        </ul>
+        <h6>@2024</h6>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

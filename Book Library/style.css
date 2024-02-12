@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-size: 20px;
+}
+
+.Navbar {
+    background-color: rgb(23, 31, 150);
+    color: white;
+}
+
+.Navbar-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 3%;
+
+}
+
+.Navbar-items li,
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.main {
+    /* height: 60vh; */
+    background-color: rgb(11, 10, 31);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-bottom: 10%;
+
+}
+
+.main h2 {
+    padding-top: 2%;
+
+}
+
+
+.Footer {
+    border-top: 1px solid rgb(255, 255, 255);
+    background-color: rgb(11, 10, 31);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 7%;
+
+}
+
+.footer-items {
+    padding-top: 6%;
+    list-style: none;
+    align-items: center;
+    /* color: white; */
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+#myForm {
+    display: none;
+    /* background-color: rgb(6, 5, 20); */
+
+}
+
+.form-book {
+    padding-left: 2%;
+    padding-right: 3%;
+    padding-top: 2%;
+    /* border-right: 1px white solid; */
+    /* height: 70vh; */
+
+}
+
+#myForm input {
+    width: 100%;
+    height: 7vh;
+    border-radius: 5px;
+    border: none;
+
+    margin: 2%;
+
+    /* background-color: transparent; */
+    color: black;
+    padding-left: 15px;
+}
+
+/* .displayButton button {
+    width: 20%;
+    background-color: rgb(5, 75, 52);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    padding: 5px;
+
+} */
+
+#myForm button {
+    width: 70%;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(5, 75, 52);
+    /* background-color: transparent; */
+    color: white;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.signleButton
+
+/* .displayButton */
+    {
+    background-color: rgb(11, 10, 31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4%;
+    padding-top: 3%;
+
+}
+
+#showFromBtn {
+    display: block;
+    width: 20%;
+    height: 5vh;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(5, 75, 52);
+    cursor: pointer;
+}
+
+.bookDisplay {
+
+    display: flex;
+    width: 100%;
+    /* flex-wrap: wrap; */
+    padding-left: 2%;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    width: 70%;
+    padding-top: 3%;
+    border-left: 1px solid gray;
+    margin-right: 3%;
+
+
+}
+
+.bookDisplay .bookLists {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    gap: 5em;
+    width: 100%;
+    border: 1px solid white;
+    padding: 2%;
+}
+
+/* styles.css */
+.book-container {
+    background-color: rgb(53, 51, 61);
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 3%;
+    width: 19%;
+}
+
+@media (max-width: 700px) {
+    .form-book {
+        margin: 9px;
+        width: 40%;
+    }
+
+    .book-container {
+        width: 90%;
+        margin-right: 60px;
+        padding: 5%;
+    }
+
+    .bookDisplay {
+        margin-right: 2%;
+    }
+
+    .bookDisplay .bookLists {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .book-container p {
+        font-size: 15px;
+        /* flex: 2; */
+        width: 100%;
+    }
+
+    .book-container button {
+        width: 40%;
+        font-size: 11px;
+    }
+
+    #showFromBtn {
+        font-size: 11px;
+    }
+}
