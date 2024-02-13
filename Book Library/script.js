@@ -1,6 +1,13 @@
 // localStorage.clear();
 
 let myLibrary = loadBooksFromLocalStorage();
+//I'll come back to this later
+// document.getElementById('sort-books').addEventListener('click', (myLibrary) => {
+//     console.log("sort btn clicked")
+//     myLibrary.sort((a, b) => a.title.localeCompare(b.title));
+//     displayBooks(myLibrary);
+// })
+
 
 function loadBooksFromLocalStorage() {
 
@@ -69,6 +76,7 @@ document.getElementById('myForm').addEventListener('submit', (event) => {
 function displayBooks(bookss) {
     let container = document.getElementById('bookContainer');
     container.innerHTML = " ";
+
     bookss.forEach((bookss, index) => {
         let bookElement = document.createElement("div");
 
@@ -95,6 +103,7 @@ function displayBooks(bookss) {
             cursor: pointer;
         ">Remove</button>
        
+        <p>This button chages the read status </p>
         <button id="toggle-status" onclick="toggleStatus(${index})" style="
         background-color:black;
         width:60%;
@@ -104,7 +113,7 @@ function displayBooks(bookss) {
         border-radius:8px;
         margin:4%;
         cursor: pointer;
-    ">${bookss.hasRead ? "Has read" : "not read yet"}</button>
+    ">${bookss.hasRead ? "not read yet" : "Has Read"}</button>
         `;
         //render another book at last
         container.appendChild(bookElement);

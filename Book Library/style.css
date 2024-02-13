@@ -7,7 +7,7 @@ body {
 }
 
 .Navbar {
-    background-color: rgb(23, 31, 150);
+    background-color: rgb(0, 0, 0);
     color: white;
 }
 
@@ -29,7 +29,7 @@ a {
 
 .main {
     /* height: 60vh; */
-    background-color: rgb(11, 10, 31);
+    background-color: rgb(19, 19, 19);
     color: white;
     display: flex;
     flex-direction: row;
@@ -46,8 +46,8 @@ a {
 
 
 .Footer {
-    border-top: 1px solid rgb(255, 255, 255);
-    background-color: rgb(11, 10, 31);
+    border-top: 1px solid rgb(110, 110, 110);
+    background-color: rgb(19, 19, 19);
     color: white;
     display: flex;
     justify-content: space-around;
@@ -119,7 +119,7 @@ a {
 
 /* .displayButton */
     {
-    background-color: rgb(11, 10, 31);
+    background-color: rgb(19, 19, 19);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,7 +128,9 @@ a {
 
 }
 
-#showFromBtn {
+#showFromBtn,
+#sort-books {
+    margin-right: 10px;
     display: block;
     width: 20%;
     height: 5vh;
@@ -150,7 +152,7 @@ a {
     /* flex-direction: row; */
     width: 70%;
     padding-top: 3%;
-    border-left: 1px solid gray;
+    border-left: 1px solid rgb(129, 129, 129);
     margin-right: 3%;
 
 
@@ -162,13 +164,13 @@ a {
     /* justify-content: space-between; */
     gap: 5em;
     width: 100%;
-    border: 1px solid white;
+    border: 1px solid rgb(133, 133, 133);
     padding: 2%;
 }
 
 /* styles.css */
 .book-container {
-    background-color: rgb(53, 51, 61);
+    background-color: rgb(39, 39, 39);
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     padding: 3%;
@@ -176,6 +178,11 @@ a {
 }
 
 @media (max-width: 700px) {
+    * {
+        margin: 0;
+        font-size: 15px;
+    }
+
     .form-book {
         margin: 9px;
         width: 40%;
@@ -214,4 +221,29 @@ a {
     #showFromBtn {
         font-size: 11px;
     }
+
+    html,
+    body {
+        height: 100%;
+    }
+
+    .main,
+    .main-body {
+        padding-bottom: 14%;
+        /* height: 50vh; */
+        min-height: 70vh;
+    }
+
+    .footer-items h6 {
+        margin-right: 50px;
+    }
+
+    .main-body {
+        height: 60vh;
+    }
+
+    .Navbar-items {
+        padding: 7%;
+    }
+
 }
